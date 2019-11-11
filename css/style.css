@@ -1,0 +1,1301 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,700,900');
+@import url('good_brush/stylesheet.css');
+body{/* Asi se define una regla para un objeto por su etiqueta (tag)*/
+	margin: 0; /*Asi se elimina el margen por defecto*/
+	font-family: 'Raleway', Arial, Verdana, sans-serif;/*Los nobres de las fuentes
+	tienen que estae entre comillas simples o dobles si tienen espacio*/
+	font-size: 14px;
+	color:black;
+	
+}
+
+img{
+	
+	display: block;
+}
+
+p{
+	margin-top: 0;/*Eliminar el margen superio*/
+	margin-bottom: 36px;/*Establece en margen inferior*/
+	line-height: 20px; /*Interlineado o alto de linea*/
+	
+}
+
+h1,h2,h3,h4,h5,h6{
+	/*Asi se aplica formato a varios objetos, separados por coma*/
+	font-weight: normal;/*Se indica que todos los encabezados tengan grosor normal*/
+	margin: 0;/*Se elimina el margen por defecto*/
+}
+
+
+
+
+
+
+.container{/*Asi se define una regla para una clase, empieza con punto*/
+	max-width: 1140px;/*ancho maximo*/
+	margin-right: auto;
+	margin-left: auto;
+	/*padding: 15px;*/ /*Espacio entre borde y contenido*/
+	/*Al hacer el margen izquierdo y derecho auto, ambos margenes vana a ser iguales y
+	se vera centrado el objeto*/
+	padding-left: 15px;
+	padding-right:15px;
+}
+
+/*Imagenes*/
+		.img-responsive{
+			width: 100%;
+			}
+
+		
+/*HIPERVINCULOS*/
+		a{
+			color:red;
+			text-decoration: none;
+			
+		}
+
+		a:hover { /*Es el estado al pasar el puntero sobre el hipervinculo*/
+			color: #3AD35E;
+			/*text-decoration: underline;*/
+			
+		}
+/*Acomodar contenedores*/
+		.row{
+			display: flex;/*Esto es para que los objetos contenidos se pongan por 
+			defecto uno al costado del otro*/
+			margin-right: -15px;
+			margin-left: -15px;
+			/*Colocando estos valores al margen izquierdo y derecho se anula el padding de container para este objeto
+			y asi no se ve el doble padding (el container y el col)*/
+		}
+
+		.col{
+			padding-left: 15px;
+			padding-right: 15px;
+			/*Para que las cajas en columna tengan el mismo ancho*/
+			flex-basis: 0;/*Le asgina un ancho inicial, en este caso cero*/
+			flex-grow: 1;/*Le indica un factor de crecimineto, en este acaso 1*/
+			box-sizing: border-box; /*Para que los paddinng no incrementen el ancho total*/
+			
+		}
+
+		.padded{
+			padding-top: 90px;
+			padding-bottom: 60px;
+			
+		}
+
+		.espacio-fila{
+			justify-content: space-between; /*para que los objetos esten lo mas separados posible
+			(tienn que estar con display flex)*/
+				
+		}
+
+		.alineamiento-vertical{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			
+		}
+
+/*Menu*/
+		.menu{
+			list-style: none;/*Elimina las viñetas*/
+			margin: 0;/*Elimina el margen por defecto de las listas*/
+			padding: 0;/*Elimina el padding por defecto de las listas*/
+			display: flex; /*Para que cada elemento de la lista este uno al costado de otro*/
+			
+		}
+
+		.menu li a {
+			text-decoration: none;
+			padding: 15px;
+			display: block;/*De esta manera al ponerle el padding al hipervinculo,este no desborda su contenerdor*/
+			
+		}
+
+/*Top header*/
+
+		#top-header{/* Asi se define una regla de estilo pra un objeto, por su id( empieza con #)*/
+			background-color:black;/*Color de fondo*/
+			color: white; /*Color de texto*/
+			
+		}
+
+		.menu-banner{
+			width: 100%;
+			padding: 20px 40px;
+			margin-top: -20px;
+			margin-left: -40px;
+			background-color: black;	
+					
+		}
+		.menu-banner li a{
+		color:black;
+		background-color: #444444;
+		border-radius: 50%;
+		margin: 0 2px;	
+
+			
+		}
+
+		.menu-banner li a:hover{
+			color:black;	
+			background-color: white;
+			transition: .5s ease-in-out all;
+		}
+
+		.imagen-banner{
+			position: relative;
+			padding: 0;
+			
+		}
+
+		#main-footer{
+			padding:10px 0;
+		}
+
+		
+		.logo{
+			padding-top: 60px;
+			height: 30%;
+			width: 50%;
+
+		}
+
+		h1{
+			font-size: 30px;
+			font-weight: 900;/*Grosor de la fuente de acuerdo a los valores indicados en Google Fonts*/
+			text-align: left;
+		}
+		h2{
+			font-size: 30px;
+			font-weight: 900;/*Grosor de la fuente de acuerdo a los valores indicados en Google Fonts*/
+			color:#7B7B7B;
+			text-align: left;
+		}
+
+		.menu-top{
+			position: absolute;/*para que el objeto este flotando respecto a su contenedor
+			especificando por la propiedad position relative*/
+			top:0;
+			margin-left: 10%;
+			margin-top:400px;
+			opacity: 1;
+			font-size: 25px;
+			font-weight: 600;
+		}
+		
+		.menu-top li1 a{
+			color:white;
+			background-color: #7B9B28;
+			padding: 25px 50px;
+					
+		}
+
+		.menu-top li1 a:hover{
+			color:black;
+			transition: all 1s ease-out;
+			
+		}
+
+		.menu-top li2 a{
+			color:white;
+			background-color: #B92155;
+			padding: 25px 50px;
+			
+		}
+
+		.menu-top li2 a:hover{
+			color:black;
+			transition: all 1s ease-out;
+			
+		}
+
+		.menu-top li3 a{
+			color:white;
+			background-color: #574B98;
+			padding: 25px 50px;
+			
+		}
+
+		.menu-top li3 a:hover{
+			color:black;
+			transition: all 1s ease-out;
+		}
+
+		.menu-top li4 a{
+			color:white;
+			background-color: #D38723;
+			padding: 25px 50px;
+			
+		}
+
+		.menu-top li4 a:hover{
+			color:black;
+			transition: all 1s ease-out;
+			
+		}
+
+		.menu-top li5 a{
+			color:white;
+			background-color: #D34423;
+			padding: 25px 50px;
+			
+		}
+
+		.menu-top li5 a:hover{
+			color:black;
+			transition: all 1s ease-out;
+			
+		}
+
+		.menu-top2{
+			position: absolute;/*para que el objeto este flotando respecto a su contenedor
+			especificando por la propiedad position relative*/
+			top:0;
+			margin-left: 90%;
+			margin-top: 450px;
+			opacity: 1;
+			font-size: 30px;
+			font-weight: 700;
+						
+		}
+		.menu-top2 li a{
+			color:white;
+			background-color: black;
+			padding: 2px 15px;
+			
+		}
+
+		.menu-top2 li a:hover{
+			color:black;
+			background-color: white;
+			transition: all 0.4s ease-out;
+			
+		}
+
+
+		
+		
+		.leyenda{
+			
+			position: absolute;/*para que el objeto este flotando respecto a su contenedor
+			especificando por la propiedad position relative*/
+			border-radius: 0%;
+			margin-left: 10%;
+			margin-top: 0%;
+			justify-content: center;
+			background-color: #202020;
+			color: white;
+			top:0;
+			height: 400px;
+			width: 300px;
+			padding: 40px;
+			box-sizing: border-box;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			opacity: 1;
+		}
+
+/*main-header*/
+		#main-header{
+			background-image: url(../images/banner2.jpg);/* Imagen de fondo */	
+			color: #FFFFFF;
+			background-size: cover;/* Para que la imagen cubra toda la pantalla */
+			background-attachment: fixed;/* Para que la imagen quede fija respecto a la ventana del navegador */
+			background-position: right center;/* Para alinear la imagen de fondo (horizontal y vertical) */
+			height: 500px;
+		}
+
+		.img-banner2{
+			
+			width: 100%;
+			position: relative;
+
+		}
+
+		.leyenda2{
+					
+			position: absolute;/*para que el objeto este flotando respecto a su contenedor
+			especificando por la propiedad position relative*/
+			margin-left: 50%;
+			margin-top: 0%;
+			justify-content: center;
+			color: white;
+			top:0;
+			height: 400px;
+			width: 600px;
+			box-sizing: border-box;
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			opacity: 1;
+		}
+
+		h3{
+			font-size: 80px;
+			margin: 30px 0px; 
+		}
+
+		#main-header p{
+			font-family: 'good_brushregular';
+			text-align: end;
+			font-size: 50px;
+			line-height: 50px;
+			font-weight: 900;
+			color:white;
+		}
+
+		#main-header p1{
+			font-size: 20px;
+		}
+
+
+
+/*Manin-header2*/
+		#main-header2{
+			background-color: #3F5163;
+			
+
+		}
+		#header2_1{
+			border-right:2px solid #6A7785;
+
+		}
+
+		h4{
+			font-size: 21.97px;
+			line-height: 1.2em;
+			color: #ffffff;
+			text-transform: uppercase;
+			padding: 35px 0px;
+			position: relative;
+		}
+
+		h4::before{
+			content:"";
+			border-bottom: solid 2px #DFA71A;
+			width: 60px;
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 20px;
+		}
+
+		h5{
+			font-size: 20px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0px 20px;
+		}
+
+
+		.menu-header2{
+			height: 80px;	
+			margin: 20px 20px;			
+		}
+
+		h6{
+			color:black;
+			font-size: 15px;
+			font-weight: 200px;
+			padding: 2	px 0;
+		}
+		p3{
+			color: #8a95a1;
+			font-size: 15px;
+			
+			
+		}	
+
+
+		.menu-header2 li {
+				background-color: white;
+				line-height: 15px;
+				width: 300px;
+			}
+		.menu-header2 li a{
+				background-color: white;
+				color: #8a95a1;
+				text-decoration: none;
+			}	
+
+		.menu-header2 li:hover{
+				background-color: rgb(48, 55, 67);
+				color: #8a95a1;
+				text-decoration: none;
+				overflow: hidden;
+				transition: all 0.8s ease-out;
+			}	
+
+			.menu-header2 li a:hover{
+				background-color: rgb(48, 55, 67);
+				color: #8a95a1;
+				text-decoration: none;
+				overflow: hidden;
+				transition: all 0.4s ease-out;
+			}	
+
+		h7{
+			font-size: 60px ;
+			color: #ffffff;
+			margin: 9px 0px 4px;
+			text-transform: none;
+		}
+		h8{
+			font-size: 40px;
+			color: #9baab8;
+			margin: 0px 0px 8px;
+		}
+
+		h9{
+			font-size: 20px;
+			color: #C0CEE2;
+			margin: 0px 0px 8px;
+		}
+
+		.type1{
+			display: block;
+			unicode-bidi: isolate;
+			margin-block-start: 0.5em;
+			margin-block-end: 0.5em;
+			margin-inline-start: auto;
+			margin-inline-end: auto;
+			overflow: hidden;
+			border-style: inset;
+			border-width: 1px;
+
+		}
+
+		p4{
+			font-size: 15.99px ;
+			line-height: 22px;
+			color: #8a99ad;
+			margin: 0px 0px 24px 0px;
+			text-transform: uppercase;
+		}
+
+		.menu-header2_1{
+			
+			margin: 20px 20px;			
+		}
+
+		.menu-header2_1 li a{
+				font-size: 15px;
+				color: white;	
+				background-color: #DFA71A;
+				line-height: 15px;
+				
+			}
+		.menu-header2_1 li a:hover{
+				background-color: black;
+				color: white;
+				text-decoration: none;
+				transition: all 0.8s ease-out;
+			}	
+
+		.img-banner3{
+			width: 180%;
+			margin-top: -86px;
+			margin-left: -140px;
+		}
+
+
+/*Galeria*/
+
+		#galeria{
+			background-color: #616163;
+		}
+
+		h10{
+			font-size: 22px;
+			line-height: 1.2em;
+			color: #ffffff;
+			text-transform: uppercase;
+			margin-left: 70px;
+		}
+
+		#imagenes{
+			justify-content: center;
+		}
+		.box{
+			
+			margin: 1%;
+			max-width: 20%;
+			position: relative;
+			
+		}
+		.col-foto{
+			margin: 1%;
+			max-width: 100%;
+			margin-bottom: 10px;
+			
+		}
+
+		#galeria .row{
+			flex-wrap: wrap;
+			
+		}
+		
+		h11{
+			font-size: 13px;
+			line-height: 20px;
+			color: #ffffff;
+			
+		}
+		h11 a {
+			color: inherit;
+		}
+		h11 a:hover {
+			color: #8a95a1;
+			text-decoration: none;
+		}
+
+		p5{	margin-top: -10px;
+			color:#C0CEE2;
+			display: block;
+			margin-block-end: 1em;
+		}
+
+		p6{
+			color:yellow;
+		}
+
+		.img-gal{
+			width: 100%;
+			height: 60%;
+					
+		}
+
+		.leyenda-gal{
+			position: absolute;
+			/*para que el objeto este flotando respecto a su contenedor
+			especificando por la propiedad position relative*/
+			margin-left: 1%;
+			margin-top: 1%;
+			width: 100%;
+			height: 60%;
+			color: white;
+			background-color:rgba(0, 0, 0, 0.30);
+			box-sizing: border-box;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			opacity: 0;
+			transition: .5s all ease-in-out;
+			transform: scale(1.5,1.5) ;
+			
+		}
+		.leyenda-gal:hover{
+			opacity: 1;
+			transform: scale(1,1) ;
+		}
+
+		
+/*BLOG*/
+#blog{
+	background-color: #3F5163;
+}
+ul{
+	list-style: none;
+
+}
+#box3{
+	border-left:2px solid #697786;
+
+}
+
+#box2{margin-left: 50px;
+	margin-top: 30px;
+	
+
+}
+
+h12{
+	font-size: 16.25px;
+	color:#8695A9;
+}
+h14{
+	font-size: 22px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 50px;
+	margin-left: -40px;
+	
+}
+
+
+#part-blog{
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+
+}
+
+p7{	
+	width: 70%;
+	color:#838F9B;
+	margin: 0px 40px;
+	line-height: 20px;
+
+}
+.espaciador{
+	margin-right: 50px;
+	text-align: right;
+	
+}
+
+
+ul2{
+	font-size: 14px;
+	margin-top: 30px;
+	list-style: none;
+
+}
+
+ul2 li{
+	color:#FFC021;
+	margin: 10px 0;
+	line-height: 2em;
+}
+
+ul2 li a{
+	color:#8695A9;
+	margin: 20px 0;
+	margin-left:30px; 
+	
+}
+
+ul2 li a:hover{
+	color:#8695A9;
+	margin: 20px 0;
+	margin-left:30px; 
+	text-decoration: underline;
+	
+}
+
+.list-blog{
+	width: 60%;
+	
+}
+
+h13{
+	font-size: 13px;
+	line-height: 20px;
+	color: #ffffff;
+	
+}
+h13 a {
+	color: inherit;
+}
+h13 a:hover {
+	color:white;
+	text-decoration: underline;
+	
+}
+
+#part-blog a{
+	color:white;
+}
+
+#part-blog a:hover{
+	color:white;
+	text-decoration: underline;
+}
+
+p8{
+	font-size: 13px;
+	line-height: 20px;
+	color: #ffffff;
+	
+}
+p8 a {
+	color: inherit;
+}
+p8 a:hover {
+	color:white;
+	text-decoration: underline;
+	
+}
+
+/*historias*/
+#unico{
+	width: 500px;
+	height: 500px;
+}
+
+
+
+#historias{
+background-color: #616163;
+
+}
+
+h16{
+	height: 39px;
+	font-size: 20px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 15px;
+	margin-bottom: 100px;
+	
+}
+
+#box4{
+	width: 10%;
+}
+
+#box5 li{
+	padding-top:20px;
+	padding-left:10px;
+
+}
+
+h17{
+	font-size: 20px;
+	color: #C0CEE2;;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 20px;
+	margin-bottom: 100px;
+}
+
+.list-historias{
+	width: 35%;
+	padding-right: 10px;
+	border-right:1px solid #6A7785;
+
+}
+
+#box7{
+	margin-left:50px;
+}
+#box9{
+	padding-top: 30px;
+}
+
+#box9 .row{
+	flex-wrap: wrap;
+	
+}
+
+#box9 .box{
+			
+	margin: 1%;
+	max-width: 30%;
+	position: relative;
+	
+}
+
+#box9 figure{
+	overflow: hidden;
+} 
+#box9 figure img{
+	transition: .5s ease-in-out all;
+}
+#box9 figure img:hover{
+	transform: scale(1.4,1.4) rotate(-15deg);
+}
+
+#box8 {
+	padding-top: 10px;
+}
+
+#box8 h12{
+	color:#C0CEE2;
+}
+
+#box8 p7{
+	color:#C0CEE2;
+}
+
+#box9 #imagenes{
+	margin-top:30px;
+
+}
+
+#box9 h11{
+	font-size: 20px;
+
+}
+
+#box9 p{
+	margin-top: 10px;
+	color:#C0CEE2;
+	display: block;
+	margin-block-end: 1em;
+}
+
+#box5 h12{
+	color:#C0CEE2;
+}
+
+#box5 p7{
+	color:#C0CEE2;
+}
+
+#box6 p7{
+	color:#C0CEE2;
+}
+
+#box6 a{
+	color:#C0CEE2;
+}
+
+
+/*Eventos*/
+	#eventos{
+		background-color: #616163;
+		
+	}
+
+	.videoWrapper {
+	
+	}
+	.videoWrapper iframe {
+
+	}
+
+	#eventos article{
+		padding:50px 0;
+		border-bottom:2px solid #6A7785;
+	}
+
+	#eventos article .row{
+		padding:20px 0;
+	}
+
+
+	.article-par{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.article-par p7{
+		width: 90%;
+	}
+/* Servicios */
+#servicios{
+	background-color:  #3F5163;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+	
+}
+.tb-col{
+	flex-basis: 66.6%;
+	max-width: 66.6%;
+}
+.tb_servicios{
+	margin: 50px;
+	background-color:#616163;
+	width: 100%;
+	
+	}
+.tb_servicios th{
+	padding: 30px;
+	color:#C0CEE2;
+	background-color: #D38723;
+	text-align: left;
+}
+.tb_servicios td{
+	padding: 20px;
+	border: solid 1px #202020;
+}
+.tb_servicios tbody tr{
+	transition: .5s ease-in-out all;
+	
+}
+.tb_servicios tbody tr:hover{
+	background-color: #cccccc;
+	color: #202020;
+	transform: translateY(20px) translateX(20px) ;
+}
+.tb_servicios tr th:nth-child(3){
+	text-align: center;
+}
+.tb_servicios tr th:nth-child(1){
+	text-align: left;
+}
+.tb_servicios tr td:nth-child(1){
+	text-align: left;
+}
+
+#servicios .row{
+	padding-left:200px; 
+}
+
+
+/*Contactenos*/
+#contactenos{
+	background-color:  #616163;
+	
+}
+
+#contactenos .row{
+	padding-top:50px;
+	
+}
+
+#contactenos header{
+	padding-bottom:20px;
+	
+}
+
+#contactenos h2{
+	color: white;
+	
+}
+h18{
+	color:#838F9B;
+}
+
+#contactenos p{
+	color:#838F9B;
+	
+}
+.mapaWrapper {
+	position: relative;
+	padding-bottom: 25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.mapaWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.formulariox input,
+.formulariox textarea{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 5px;
+	border:none;
+	border-bottom: 1px solid #cccccc;
+	outline: none;
+	font: inherit;
+}
+
+
+.col-30{
+	/* Esto es para que el ancho del objeto sea la mitad de su contenedor */
+	flex-basis: 30%;
+	max-width: 30%;
+	border-right: 1px solid #cccccc;
+	
+}
+
+::placeholder{
+	color:white;
+}
+
+.formulariox input[type=text]{
+	
+	padding: 20px 35px;
+	width: 70%;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	border: 1px solid #77879A;
+	background-color: #616163;
+	color: white;
+	
+	
+}
+
+.formulariox{
+	color:white;
+	margin-top:-40px;
+}
+
+.formulariox textarea{ 
+	background-color: #616163;
+	border: 1px solid #77879A;
+}
+
+.formulariox input:focus,
+.formulariox textarea:focus{ 
+	
+	border-bottom-color: white;
+	
+}
+
+#buttom{
+	padding: 20px 20px;
+}
+
+.formulariox input[type=submit]{
+		font-size: 15px;
+		border: none;
+		background-color: #DFA71A;
+		color:#ffffff;
+	}
+
+.formulariox input[type=submit]:hover{
+border: none;
+
+	background-color: black;
+	color:#ffffff;
+	transition: .5s all ease-in-out;
+	cursor: pointer;
+}
+
+/*Fin*/
+
+#fin{
+	background-color:black;
+}
+
+#fin h7{
+	color:#DFA71A;
+	
+}
+#fin h8{
+	color: white;
+}
+
+
+.col-40{
+	/* Esto es para que el ancho del objeto sea la mitad de su contenedor */
+	flex-basis: 30%;
+	max-width: 30%;
+	
+	
+}
+#img2{
+	margin:0px 30px;
+}
+
+#img2 img{
+	margin:5px 5px;
+}
+
+
+
+/*.....*/
+
+h15{
+	font-size: 25px;
+	font-weight: 900px;
+	line-height: 1.2em;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 50px;
+	position: relative;
+	
+}
+
+
+h15::before{
+	content:"";
+	border-bottom: solid 2px #DFA71A;
+	width: 60px;
+	position: absolute;
+	bottom: 0;
+	
+	
+	margin-bottom: 45px;
+}
+
+#box8 h15,
+#box9 h15{
+	margin-left: -20px;
+}
+
+#galeria h15{
+	margin-left: 70px;
+}
+
+#contactenos p{
+	color: #C0CEE2;
+}
+h18{
+	color: white;
+}
+
+#uu{
+	padding: 0px 20px;
+}
+
+#pop-art h8{
+	font-size: 30px;
+}
+
+#pop-art h9{
+	font-size: 15px;
+}
+
+#ee{
+	text-align: center;
+}
+
+#ee img{
+	margin-left: 80px;
+	padding-top:20px;
+	padding-bottom:40px;
+}
+
+#fin header{
+	padding-bottom: 20px;
+}
+
+.texto-importante{
+	font-family: 'good_brushregular';
+	font-weight: 900;
+	color:#DFA71A;
+	text-transform: uppercase;
+	letter-spacing: -3px;/* Espaciado entre letras */
+}
+
+
+#irarriba{
+	background-color: #DFA71A;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 24px;
+	position: fixed;/* Para que esté en una posición fija con respecto a al ventana */
+	right: 40px;/* distancia respecto al borde derecho */
+	bottom: 40px;/* distancia respecto al borde inferior */
+	transition: .5s ease-in-out all;
+	border-radius: 20%;
+}
+
+
+#pcarrusel{
+	background-color: #3F5163;
+
+}
+
+/*calendario*/
+
+#calendario{
+	background-color: #616163;
+
+}
+
+#mycalendar{
+	padding-bottom: 100px;
+}
+
+.monthly {
+	box-shadow: 0 13px 40px rgba(0, 0, 0, 0.5);
+	font-size: 0.8em;
+}
+
+#calendario input[type="text"] {
+	padding: 15px;
+	border-radius: 2px;
+	font-size: 16px;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	background: rgba(63, 78, 100, 0.27);
+	color: #fff;
+	width: 250px;
+	box-sizing: border-box;
+	
+}
+#calendario input[type="text"]:hover {
+	border: 2px solid rgba(255, 255, 255, 0.7);
+}
+#calendario input[type="text"]:focus {
+	border: 2px solid rgba(255, 255, 255, 1);
+	background:#eee;
+	color:#222;
+}
+
+#calendario .button {
+	display: inline-block;
+	padding: 15px 25px;
+	margin: 25px 0 75px 0;
+	border-radius: 3px;
+	color: #fff;
+	background: #000;
+	letter-spacing: .4em;
+	text-decoration: none;
+	font-size: 13px;
+}
+#calendario .button:hover {
+	background: #3b587a;
+}
+#calendario .desc {
+	max-width: 250px;
+	text-align: left;
+	font-size:14px;
+	padding-top:30px;
+	line-height: 1.4em;
+}
+#calendario .resize {
+	background: #222;
+	display: inline-block;
+	padding: 6px 15px;
+	border-radius: 22px;
+	font-size: 13px;
+}
+
+#select_date{
+	padding: 100px;
+	text-align: center;
+}
+
+
+#pcarrusel1{
+	background-color:  #3F5163;
+}
+
+
+#pcarrusel1 h15{
+	font-size: 25px;
+	font-weight: 900px;
+	line-height: 1.2em;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 50px;
+	position: relative;
+	
+}
+
+
+#pcarrusel1 h15::before{
+	content:"";
+	border-bottom: solid 2px #DFA71A;
+	width: 60px;
+	position: absolute;
+	bottom: 0;
+	
+	
+	margin-bottom: 45px;
+}
+@media (max-height: 700px) {
+	.sticky {
+		position: relative;
+	}
+}
+@media (max-width: 600px) {
+	.resize {
+		display: none;
+	}
+}
+
+

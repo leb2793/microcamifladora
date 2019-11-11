@@ -1,0 +1,27 @@
+.carrusel{
+height:350px;
+overflow:hidden;
+width:120px;
+}
+
+.bloque-imagenes{
+margin:0 0 0 12px;
+padding:0;
+}
+
+.bloque-imagenes li{
+list-style:none;
+margin:0;
+padding:0;
+margin-bottom:12px;
+}
+
+.bloque-imagenes li img{
+height:73px;
+width:109px;
+border:0;
+}
+
+.bloque-imagenes a:hover img{
+border:1px #fff solid;
+}
